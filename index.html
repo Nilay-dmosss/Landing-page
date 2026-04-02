@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yılın Son Süper Fırsatları</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<!-- /*navbar*/ -->
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-bar" placeholder="Arama yapın...">
+            <button class="search-button" onclick="searchProducts()">🔍</button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Paketler</a></li>
+            <li><a href="#">Ürünler</a></li>
+            <li><a href="#">Mağazalarımız</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="account-cart">
+            <a href="#">Hesabım</a>
+            <a href="#">Alışveriş Sepeti</a>
+        </div>
+    </nav>
+    <!-- /**/ -->
+    <header>   
+        <h1>Yılın Son Süper Fırsatları</h1>
+        <p>Sınırlı süreli indirimler ve fırsatlar sizi bekliyor!</p>
+    </header>
+    <!-- /*animasyon*/ -->
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAnim">   
+        </div>
+    </div>
+<!-- /*slayt*/ -->
+     <div class="carousel-container">
+     <div class="carousel">
+     <div class="slider-container">
+        <h2>Kampanya Fırsatları</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="/resim/3.jpg" alt="Ürün1">
+                    <h3>Ürün1</h3>
+                </div>
+                <div class="slide">
+                    <img src="/resim/3.jpg" alt="Ürün2">
+                    <h3>Ürün2</h3>
+                </div>
+                <div class="slide">
+                    <img src="/resim/3.jpg" alt="Ürün3">
+                    <h3>Ürün3</h3>
+                </div>
+                <div class="slide">
+                        <img src="/resim/3.jpg" type="Ürün4">
+                    <h3>ürün</h3>
+                </div>
+            </div>
+            <div class="dots"></div>
+        </div>
+    </div>
+</div>
+</div>
+  <!-- /*kategori başlıkları*/ -->
+    <div class="container">
+        <div class="categories">
+            <div class="category">Elektronik</div>
+            <div class="category">Elektronik</div>
+            <div class="category">Elektronik</div>
+            <div class="category">Elektronik</div>
+        </div>
+        <div class="products" id="products-container">
+        </div>
+        <div class="special-prd">
+            <h2>Özel Fiyatlı Ürünler</h2>
+            <p>Bu ürünler için ekstra indirimler geçerli! Hemen satın alın.</p>
+        </div>
+        <!-- /*örnek ürün section kısım*/ -->
+        <section class="products-container"> 
+            <h1 class="heading">Son Eklenen Ürünler</h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="/resim/3.jpg" alt="Laptop" class="product-image">
+                    <h3 class="job-title product-title">Gaming Laptop XYZ</h3>
+                    <div class="price">
+                        <span class="orjinal-fiyat">5000 TL</span>
+                        <span class="ind-fiyat">4000 TL</span>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="product_detail.html" class="btn">Detayları Gör</a>
+                        <button type="submit" class="far fa-heart" name="favorite" title="Favorilere Ekle"></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/resim/3.jpg" alt="Telefon" class="product-image">
+                    <h3 class="job-title product-title">ABC</h3>
+                    <div class="price">
+                        <span class="orjinal-fiyat">3000 TL</span>
+                        <span class="ind-fiyat">2500 TL</span>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="product_detail.html" class="btn">Detayları Gör</a>
+                        <button type="submit" class="far fa-heart" name="favorite" title="Favorilere Ekle"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="influencers">
+            <h2>Influencerların Seçtikleri</h2>
+            <p>Popüler influencerlar tarafından önerilen ürünler.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Hesabım</a>
+            <a href="#">Sipariş Bilgilerim</a>
+            <a href="#">Kurumsal</a>
+            <a href="#">Ödeme Koşulları</a>
+            <a href="#">Popüler Kategoriler</a>
+            <a href="#">İletişim</a>
+        </div>
+       <!-- /*socialmedia*/ -->
+        <div class="social-media">
+            <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="metin">
+        <p>Yasal Metinler: 
+        <a href="#" >Gizlilik Politikası</a> 
+        <a href="#" >Kullanım Şartları</a></p>
+        <p>&copy; Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
